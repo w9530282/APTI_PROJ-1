@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartTest</string>
+    <string name="title_activity_options">Options</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="hint_email">Enter Candidate Code</string>
+    <string name="hint_name">Enter Candidate name</string>
+</resources>

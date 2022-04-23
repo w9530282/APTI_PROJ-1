@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.smarttest.views.QuestionModuleActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_one"
+        android:text="Percentage"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_two"
+        android:text="MPermutations and Combination"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_three"
+        android:text="Pipes and cistern"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_four"
+        android:text="Time,Speed and Distance"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_five"
+        android:text="Coding and Decoding"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_six"
+        android:text="Blood Relations"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_seven"
+        android:text="Calendar"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_eight"
+        android:text="Clocks"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_nine"
+        android:text="LCM and HCF"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/module_ten"
+        android:text="Analogy"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

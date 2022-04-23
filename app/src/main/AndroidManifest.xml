@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.smarttest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".views.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.CandidateDashBoardActivity"
+            android:label="@string/title_activity_options"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.QuestionActivity1" />
+        <activity android:name=".views.QuestionActivity" />
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.EmployeeDashBoard" />
+        <activity android:name=".views.CandidateRegistrationActivity" />
+        <activity android:name=".views.EmployeeRegistrationActivity" />
+        <activity android:name=".views.BaseActivity" />
+        <activity android:name=".views.QuestionModuleActivity"></activity>
+    </application>
+
+</manifest>
