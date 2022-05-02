@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#1e8f8e"
+    >
+
+
+    <ImageView android:id="@+id/home_logo"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="center"
+        android:src="@drawable/logo"/>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_candidate"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:layout_below="@id/home_logo"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_candidate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_candidate_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/hint_email" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/input_candidate_layout"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_candidate_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="@string/hint_name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_candidate_go"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/input_layout_name"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bcg_login"
+            android:text="Get Started"/>
+
+
+            <TextView
+                android:id="@+id/text_candidate_register"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/btn_candidate_go"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="6dp"
+                android:padding="5dp"
+                android:text="Register"/>
+
+
+            <TextView
+                android:id="@+id/text_login_as_employee"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/btn_candidate_go"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:text="Login As Employee ?"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_employee"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:layout_below="@id/home_logo"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_emp_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_emp_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Enter EmployeeID" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_emp_name"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/input_emp_layout"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:hint="Enter EmployeeName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_emp_go"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/input_emp_name"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bcg_login"
+                android:text="Go"/>
+
+            <TextView
+                android:id="@+id/text_employee_register"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/btn_emp_go"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="6dp"
+                android:padding="5dp"
+                android:text="Register"/>
+
+
+            <TextView
+                android:id="@+id/text_login_as_candidate"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/btn_emp_go"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Login As Candidate ?"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/star"
+        android:id="@+id/flotbutton"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/card_candidate">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
